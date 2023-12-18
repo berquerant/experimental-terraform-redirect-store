@@ -61,11 +61,11 @@ jobs:
       # - build-api
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    services:
-      api:
-        image: api-server
-        ports:
-          - 8030:8030
+    # services:
+    #   api:
+    #     image: api-server
+    #     ports:
+    #       - 8030:8030
     strategy:
       fail-fast: false
       matrix:
